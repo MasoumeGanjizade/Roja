@@ -1,0 +1,181 @@
+* {
+      margin: 0;
+      padding: 0;
+      font-family: 'Vazir', sans-serif;
+      box-sizing: border-box;
+    }
+
+    .bar {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    .menu ul {
+      display: flex;
+    }
+
+    .menu ul li {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      color: rgb(206, 88, 49);
+    }
+
+    .logo {
+      margin: 5px;
+      padding: 2px;
+    }
+
+    header {
+      padding: 5px;
+    }
+
+    .home {
+      min-height: 100vh;
+      width: 100%;
+      background-image: url(./home4.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .text-box {
+      width: 35%;
+      color: rgb(206, 88, 49);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text-box h1 {
+      font-size: 62px;
+    }
+
+    .text-box p {
+      margin: 10px 0 40px;
+      font-size: 18px;
+      font-weight: 300;
+      color: rgb(206, 88, 49);
+    }
+
+    #btnOff {
+      display: inline-block;
+      text-decoration: none;
+      color: rgb(206, 88, 49);
+      border: 1px solid #f2bb6d;
+      padding: 12px 34px;
+      font-size: 16px;
+      background: transparent;
+      position: relative;
+      cursor: pointer;
+      border-radius: 1ch;
+    }
+
+    .Cosmetics:hover {
+      border: 1px solid #FFEDE6;
+      background: #fddb9b;
+      transition: 1s;
+    }
+
+    .product-background {
+      background-color: #f1cfad;
+    }
+
+    .container { 
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px; 
+    }
+
+    .product, .cart { 
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      width: 260px;
+      text-align: center;
+    }
+
+    .product img { 
+      width: 60%;
+      height: 200px;
+      border-radius: 8px;
+      margin-bottom: 30px; 
+    }
+
+    .product button, .cart button {
+      background: #c45b30;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .product button:hover {
+      background: #e89c4f;
+    }
+
+    .cart ul {
+      list-style: none; 
+      padding: 0;
+    }
+
+    .cart li {
+      margin: 8px 0; 
+    }
+
+    .cart-controls button {
+      margin: 0 3px; 
+    }
+
+    footer {
+      background: #c45b30;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+ @media (max-width: 768px) {
+    .bar{
+        margin: 30px;
+        flex-direction: row;
+    }
+      .menu ul {
+        margin: 10px;
+        flex-direction: row;
+        gap: 5px;
+      }
+
+      .text-box h1 {
+        font-size: 24px;
+      }
+
+      .text-box p {
+        font-size: 14px;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product, .cart {
+        width: 80%;
+      }
+    }
+  @font-face {
+     font-family: 'Vazir';
+     src: url('./fonts/Vazir-Bold.woff2') format('woff2'),
+       url('./fonts/Vazir-Bold.woff') format('woff');
+}

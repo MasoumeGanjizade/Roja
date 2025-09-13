@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roja Cosmetics - Shopping Cart</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div class="logo"><img src="./logo (1).png" alt="Roja logo"></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#cart-items">Shop</a></li>
+          <li><a href="./home.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="home">
+    <div class="text-box">
+      <h1>Roja Beauty Products</h1>
+      <p>Turn your winter skin into spring</p>
+      <button id="btnOff">Shop Now with 20% Off</button>
+    </div>
+  </div>
+
+<div class="container" id="product-list"></div>
+
+<div class="container">
+  <div class="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">0</span> Toman</p>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+<footer>
+  <p>© Roja – Beauty & Skincare</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
